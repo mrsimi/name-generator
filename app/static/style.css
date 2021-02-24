@@ -1,0 +1,105 @@
+html, textarea, button{
+    font-family: 'Questrial', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    /* background-image: url('https://images.unsplash.com/photo-1498721425774-488298864da7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+nav{
+    padding: 20px 50px;
+    background-color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.content{
+    margin: 100px 0px;
+    padding: 0;
+    /* overflow: hidden;
+    position: absolute;
+    width: 97vw;
+    height: 94vh; */
+    display: flex;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px); */
+   
+}
+.container{
+    padding: 5px;
+}
+.hero-text{
+    font-size: 48px;
+    text-align: center;
+    margin: 0;
+}
+
+.hero-subtitle{
+    margin: 0;
+    text-align: center;
+}
+
+textarea{
+    display: block;
+    margin-top: 10px;
+    width: 95%;
+    margin: 10px auto;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.btn{
+    display: block;
+    margin-top: 10px;
+    width: 95%;
+    margin: 15px auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 8px 5px;
+    background-color: yellow;
+    border: none;
+}
+
+.result-flex{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+}
+
+.rect{
+    height: 150px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-text{
+        font-size: 18px;
+    }
+    .hero-subtitle{
+        font-size: 12px;
+    }
+    textarea{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .btn    {
+        font-size: 14px;
+    }
+    
+}

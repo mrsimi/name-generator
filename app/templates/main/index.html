@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+    <div class="container">
+        <p class="hero-subtitle">
+            ..generating names for your business
+        </p>
+        <h4 class="hero-text">
+            Focus on <u> the perfect Idea</u> <br>
+            let us handle <u> the perfect name </u>
+        </h4>
+
+        <form action="/" method="POST">
+            {{form.hidden_tag()}}
+            <div>
+                {{ form.app_concept(rows='8', cols='30', placeholder=' I want to build an app or a business that does...')}}
+                {% for error in form.app_concept.errors %}
+                <span style="color: white;display: block; text-decoration: underline;">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div>
+                {{form.generate(class='btn')}}
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container result-flex">
+    {% for result in app_concept_to_list %}
+    <div class="rect">
+        {{ result }}
+    </div>
+    {% endfor %}
+
+</div>
+{% endblock %}
